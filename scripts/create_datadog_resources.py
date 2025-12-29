@@ -4,15 +4,25 @@ from datadog_api_client import ApiClient, Configuration
 from datadog_api_client.v1.api.dashboards_api import DashboardsApi
 from datadog_api_client.v1.api.monitors_api import MonitorsApi
 from datadog_api_client.v1.models import *
-
+from datadog_api_client.v1.api.authentication_api import AuthenticationApi
 
 def create_dashboard(api_key: str, app_key: str):
     configuration = Configuration()
+    configuration.site = "datadoghq.com"
     configuration.api_key["apiKeyAuth"] = api_key
     configuration.api_key["appKeyAuth"] = app_key
+    # API Key → Identifies who you are
+    # App Key → Controls what you’re allowed to do
 
     with ApiClient(configuration) as api_client:
+        print(AuthenticationApi(api_client).validate())
         dashboards_api = DashboardsApi(api_client)
+
+        # List existing dashboards
+        dashboards = dashboards_api.list_dashboards()
+        for d in dashboards["dashboards"]:
+            print(d["title"], "->", d["id"])
+    
 
         title = "LLM Black Box - Single Pane"
         widgets = [
@@ -33,7 +43,13 @@ def create_dashboard(api_key: str, app_key: str):
             Widget(
                 definition=QueryValueWidgetDefinition(
                     title="Request Rate",
-                    requests=[QueryValueWidgetRequest(q="sum:llm.requests.count{*}", aggregator=QueryValueWidgetAggregator.SUM)],
+                    type=QueryValueWidgetDefinitionType.QUERY_VALUE,
+                    requests=[
+                        QueryValueWidgetRequest(
+                            q="sum:llm.requests.count{*}",
+                            aggregator="sum"
+                        )
+                    ],
                 )
             ),
         ]

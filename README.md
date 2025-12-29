@@ -245,14 +245,15 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 🎥 Demo Video
-
-A 3-minute walkthrough demonstrates:
+## 🎥 Demo
 
 * Observability strategy
 * Detection rules
 * Incident creation
 * Dashboard views
+```bash
+https://p.us5.datadoghq.com/sb/bdd741db-de5e-11f0-a8e3-e69d0c65f8ac-b96fa03f1479622e749b5b8ad1c3c51b"
+```
 
 ---
 
