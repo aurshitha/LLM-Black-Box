@@ -285,7 +285,7 @@ python scripts/generate_traffic.py --n 5 --mode token_explosion
 ![LLM Application Dashboard](Images/dashboard_view.png)
 *Comprehensive Datadog dashboard showing real-time LLM application health*
 
-![Performance Metrics](images/performance_view.png)
+![Performance Metrics](Images/performance_view.png)
 *Response time, throughput, and error rate monitoring*
 
 ### **2. Incident Management**
