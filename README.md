@@ -359,7 +359,7 @@ SLOs define expected reliability targets and surface error budgets.
 --- -->
 
 ### 📊 Live Dashboard Preview
-[![Dashboard](screenshots/dashboard_thumb.png)](https://p.us5.datadoghq.com/sb/bdd741db-de5e-11f0-a8e3-e69d0c65f8ac)
+[![Dashboard](Images/dashboard_thumb.png)]([https://p.us5.datadoghq.com/sb/bdd741db-de5e-11f0-a8e3-e69d0c65f8ac](https://p.us5.datadoghq.com/sb/bdd741db-de5e-11f0-a8e3-e69d0c65f8ac-d20bb7da3b0213396c2c8d7169c2852f))
 *Click to view live Datadog dashboard*
 
 <!--
