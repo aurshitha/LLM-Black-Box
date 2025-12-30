@@ -282,39 +282,39 @@ python scripts/generate_traffic.py --n 5 --mode token_explosion
 ## 📸 Screenshots
 
 ### **1. Live Dashboard & Monitoring**
-![LLM Application Dashboard](images/dashboard_view.png)
+![LLM Application Dashboard](Images/dashboard_view.png)
 *Comprehensive Datadog dashboard showing real-time LLM application health*
 
-![Performance Metrics](images/performance_view.png)
+![Performance Metrics](Images/performance_view.png)
 *Response time, throughput, and error rate monitoring*
 
 ### **2. Incident Management**
-![Automatic Incident Creation](images/incidents_tracking.png)
+![Automatic Incident Creation](Images/incidents_tracking.png)
 *Datadog automatically creates incidents when detection rules trigger*
 
-![Agent Detection](images/datadog_agent_detection.png)
+![Agent Detection](Images/datadog_agent_detection.png)
 *Datadog Agent processing telemetry and detecting anomalies*
 
 ### **3. Distributed Tracing**
-![APM Traces](images/datadog_APM.png)
+![APM Traces](Images/datadog_APM.png)
 *Application Performance Monitoring showing distributed traces*
 
-![Trace Waterfall](images/traces_1.png)
+![Trace Waterfall](Images/traces_1.png)
 *Detailed trace waterfall showing LLM call timing*
 
 ### **4. Query Processing**
-![LLM Query Request](images/llm_query_request.png)
+![LLM Query Request](Images/llm_query_request.png)
 *End-to-end query flow from user to Vertex AI Gemini*
 
 ### **5. Performance Details**
-![Request Performance](images/requests_performance.png)
+![Request Performance](Images/requests_performance.png)
 *Detailed performance breakdown of individual requests*
 
-![Error Monitoring](images/requests_error.png)
+![Error Monitoring](Images/requests_error.png)
 *Error rate tracking and anomaly detection*
 
 ### **6. Dashboard Configuration**
-![Dashboard Setup](images/datadog_dashboard.png)
+![Dashboard Setup](Images/datadog_dashboard.png)
 *Custom Datadog dashboard configuration for LLM observability*
 
 ---
